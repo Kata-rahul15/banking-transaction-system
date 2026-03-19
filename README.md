@@ -2,19 +2,19 @@
 
  🚀 Overview
 
-A **high-integrity backend system** built to simulate real-world banking operations with strict guarantees on **data consistency, concurrency, and transactional safety**.
+A high-integrity backend system built to simulate real-world banking operations with strict guarantees on data consistency, concurrency, and transactional safety.
 
-Designed with a focus on **ACID compliance**, **race-condition handling**, and **failure recovery**, this system ensures reliable financial operations even under concurrent requests.
+Designed with a focus on ACID compliance, race-condition handling, and failure recovery, this system ensures reliable financial operations even under concurrent requests.
 
 
 
  ⚡ Key Highlights
 
 * 🔒 ACID-compliant transaction management using Spring @Transactional
-* ⚙️ Concurrency-safe balance updates using **pessimistic locking**
-* 🔁 Deadlock prevention via **deterministic account locking order**
-* 💰 Precision-safe calculations using **BigDecimal**
-* 📦 Event-driven extension with **Kafka (post-commit publishing)**
+* ⚙️ Concurrency-safe balance updates using pessimistic locking
+* 🔁 Deadlock prevention via deterministic account locking order
+* 💰 Precision-safe calculations using BigDecimal
+* 📦 Event-driven extension with Kafka (post-commit publishing)
 * 🛡 Global exception handling with structured error responses
 
 
@@ -27,8 +27,8 @@ Controller → Service → Repository → Database
 
 * All financial operations are wrapped in transactions
 * Accounts are locked using `PESSIMISTIC_WRITE`
-* Transfer operations lock accounts in **sorted order**
-* Event publishing happens **only after successful commit**
+* Transfer operations lock accounts in sorted order
+* Event publishing happens only after successful commit
 
 
 
@@ -69,15 +69,15 @@ The system prevents:
 * ❌ Partial transactions
 * ❌ Inconsistent states during failures
 
-✔ All operations are **atomic and rollback-safe**
+✔ All operations are atomic and rollback-safe
 
 
 
  🔄 Concurrency Handling
 
-* Uses **PESSIMISTIC_WRITE locking**
+* Uses PESSIMISTIC_WRITE locking
 * Ensures safe updates under concurrent requests
-* Prevents deadlocks by locking accounts in **sorted order**
+* Prevents deadlocks by locking accounts in sorted order
 
 
 
@@ -224,9 +224,9 @@ Horizontal scaling with distributed locking
 This project demonstrates:
 
 * Real-world backend engineering practices
-* Strong understanding of **transaction management**
-* Handling **concurrency in financial systems**
-* Designing **fault-tolerant APIs**
+* Strong understanding of transaction management
+* Handling concurrency in financial systems
+* Designing fault-tolerant APIs
 
 Outbox pattern for reliable event publishing
 
@@ -235,6 +235,6 @@ Why This Project Matters
 This project demonstrates:
 
 * Real-world backend engineering practices
-* Strong understanding of **transaction management**
-* Handling **concurrency in financial systems**
-* Designing **fault-tolerant APIs**
+* Strong understanding of transaction management
+* Handling concurrency in financial systems
+* Designing fault-tolerant APIs
