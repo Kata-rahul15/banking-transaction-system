@@ -219,17 +219,6 @@ CI/CD integration
 
 Horizontal scaling with distributed locking
 
- 📌 Why This Project Matters
-
-This project demonstrates:
-
-* Real-world backend engineering practices
-* Strong understanding of transaction management
-* Handling concurrency in financial systems
-* Designing fault-tolerant APIs
-
-Outbox pattern for reliable event publishing
-
 Why This Project Matters
 
 This project demonstrates:

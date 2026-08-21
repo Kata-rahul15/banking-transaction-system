@@ -42,7 +42,10 @@ public class AccountService {
     }
 
     public AccountDto getAccount(Long id) {
-        Account a = accountRepo.findById(id).orElseThrow(() -> new AccountNotFoundException("Account " + id + " not found"));
+        Account a = accountRepo
+                .findById(id).orElseThrow(
+                        () -> new AccountNotFoundException
+                                ("Account " + id + " not found"));
         return Mapper.toDto(a);
     }
 
